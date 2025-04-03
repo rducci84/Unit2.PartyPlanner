@@ -1,34 +1,27 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js" defer></script>
-    <link href="style.css" rel="stylesheet"/>
-    <title>Document</title>
+    <title>Party Planner</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Recipe List</h1>
-    <form id="recipeForm">
-        <h4>Add a new Recipe</h4>
-        <div>
-            <label>Name</label>
-            <input type="text" name="name" required/>
-        </div>
-        <div>
-            <label>Image URL</label>
-            <input type="url" name="imgUrl" required/>
-        </div>
-        <div>
-            <label>Description</label>
-            <input type="textbox" name="description" required/>
-        </div>
-        <button type="submit">Submit</button>
-    </form>
-    <hr/>
-    <!-- <button id="addRec">Add</button> -->
-    <div id="recipeList">
 
-    </div>
+    <h1>Party Planner</h1>
+
+    <form id="party-form">
+        <input type="text" id="name" placeholder="Party Name" required>
+        <input type="date" id="date" required>
+        <input type="time" id="time" required>
+        <input type="text" id="location" placeholder="Location" required>
+        <input type="text" id="description" placeholder="Description" required>
+        <button type="submit">Add Party</button>
+    </form>
+
+    <div class="party-list" id="party-list"></div>
+
+    <script src="index.js"></script>
 </body>
 </html>

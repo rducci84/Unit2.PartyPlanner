@@ -1,15 +1,20 @@
-*{
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
 }
 
-#recipeList{
-    display: flex;
-    flex-wrap: wrap;
+.party-list {
+    margin-top: 20px;
 }
 
-#recipeList > div {
-    border: 1px solid black;
-    margin: 1rem;
-    padding: 1rem;
-    width: calc(100% /2 - 2rem);
+.party-item {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-left: 10px;
+}
+
+form {
+    margin-top: 20px;
 }
